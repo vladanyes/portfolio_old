@@ -1,7 +1,0 @@
-- var skills = ['HTML-PUG', 'CSS-SCSS', 'JavaScript']
-each skill in skills
-    .skill
-        svg(viewBox="0 0 120 120" class="skill-circle")
-            circle(cx="50%" cy="50%" r="40" class="skill-circle__bottom")
-            circle(cx="50%" cy="50%" r="40" class=`skill-circle__${skill}`)
-        div(class=`skill__name skill__name_${skill}` )= skill
