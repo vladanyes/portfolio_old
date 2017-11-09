@@ -1,0 +1,25 @@
+.hero {
+  height:600px;
+  overflow: hidden;
+  position: relative;
+}
+.hero__bg {
+  height: inherit;
+}
+
+.hero-title {
+  @include absolute-vertical-center;
+  text-align: center;
+  width: 100%;
+}
+.user__photo-img {
+  @include absolute-center;
+  width: 20%;
+  clip-path: circle(40% at 50% 50%);
+}
+.hero__user-block {
+  color: $c-white;
+}
+.user__name {
+  font-size: 30px;
+}

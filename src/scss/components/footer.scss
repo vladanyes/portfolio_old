@@ -1,0 +1,19 @@
+.footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: $c-main;
+  position: relative;
+}
+.footer__rights {
+  @include absolute-horizontal-center;
+  bottom: 5%;
+  color: $c-beige;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.footer__hr {
+  width: 80%;
+  @include absolute-horizontal-center;
+  bottom: 30%;
+
+}

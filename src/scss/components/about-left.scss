@@ -1,0 +1,52 @@
+.user-about__picture {
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px #777;
+}
+.user-about__picture-img {
+  width:100%;
+  border: 10px solid $c-white;
+}
+.user-about__picture-desc {
+  width: 100%;
+  text-align: center;
+  font-family: 'zombie';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 40px;
+  color: #888;
+}
+.subtitle {
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  font-size: 45px;
+  color: $c-main;
+  font-family: 'bernier';
+  padding: 45px 80px;
+  position: relative;
+  display: inline-block;
+  $margin:40px;
+  &:after,
+  &:before {
+    content: '';
+    display: block;
+    @include absolute-vertical-center;
+    background: rgba($c-main, .2);
+    width: 22px;
+    height: 5px;
+  }
+  &:after {
+    right:$margin;
+  }
+  &:before {
+    left:$margin;
+  }
+}
+.user-about__text {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "San Francisco";
+}
+.about-data__title {
+  padding-top: 2.5%;
+}

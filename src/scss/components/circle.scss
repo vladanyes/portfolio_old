@@ -1,0 +1,103 @@
+.skill{
+  width: 100%;
+  position: relative;
+}
+.skill-circle {
+  transform: rotate(-90deg);
+  stroke-width: 15px;
+}
+.skill-circle .skill-circle__bottom {
+  fill: none;
+  stroke: #b8cdd3;
+}
+.skill__name {
+  text-align: center;
+  font-family: "San Francisco";
+  font-size: 25px;
+  color: $c-main;
+}
+.skill__name:before {
+  @include absolute-center;
+  top: 45%;
+  content: '1%';
+  display: block;
+  min-width: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  color: $c-main;
+}
+// JavaScript circle animation
+.skill-circle .skill-circle__JavaScript {
+  fill: none;
+  stroke: $c-main;
+  stroke-dasharray:0 252;
+  animation: 3s linear circleJs;
+  animation-fill-mode: forwards;
+}
+@keyframes circleJs{
+  to{stroke-dasharray: 63 252;}
+}
+// JavaScript percentage animation
+.skill__name_JavaScript:before {
+  animation: 3s linear countJs;
+  animation-fill-mode: forwards;
+}
+@keyframes countJs{
+  from{content: '5%'}
+  25%{content: '10%'}
+  50%{content: '15%'}
+  75%{content: '20%'}
+  to{content: '25%';}
+}
+//HTML-PUG circle animation
+.skill-circle .skill-circle__HTML-PUG {
+  fill: none;
+  stroke: $c-main;
+  stroke-dasharray:0 252;
+  animation: 4s linear circlePug;
+  animation-fill-mode: forwards;
+}
+@keyframes circlePug{
+  to{stroke-dasharray: 189 252;}
+}
+// HTML-PUG percentage animation
+.skill__name_HTML-PUG:before {
+  animation: 4s linear countPug;
+  animation-fill-mode: forwards;
+}
+@keyframes countPug{
+  from{content: '5%'}
+  15%{content: '15%'}
+  30%{content: '20%'}
+  45%{content: '35%'}
+  60%{content: '50%'}
+  75%{content: '55%'}
+  90%{content: '60%'}
+  to{content: '75%';}
+}
+//CSS-SCSS circle animation
+.skill-circle .skill-circle__CSS-SCSS {
+  fill: none;
+  stroke: $c-main;
+  stroke-dasharray:0 252;
+  animation: 4s linear circleCss;
+  animation-fill-mode: forwards;
+}
+@keyframes circleCss{
+  to{stroke-dasharray: 189 252;}
+}
+// CSS-SCSS percentage animation
+.skill__name_CSS-SCSS:before {
+  animation: 4s linear countCss;
+  animation-fill-mode: forwards;
+}
+@keyframes countCss{
+  from{content: '5%'}
+  15%{content: '15%'}
+  30%{content: '20%'}
+  45%{content: '35%'}
+  60%{content: '50%'}
+  75%{content: '55%'}
+  90%{content: '60%'}
+  to{content: '75%';}
+}

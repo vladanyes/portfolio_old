@@ -1,0 +1,16 @@
+.socials{
+  @include absolute-horizontal-center;
+  top: 5%;
+}
+.socials__link {
+  display: inline;
+}
+.social__link_gh-svg path{
+  &:hover {
+    fill: #dcac7a !important;
+  }
+}
+.social__link_gh-svg path {
+  transition: 100ms;
+  transition-timing-function: ease-in-out;
+}

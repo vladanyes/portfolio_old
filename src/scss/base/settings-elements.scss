@@ -1,0 +1,95 @@
+/* ==========================================================================
+  Base styles
+  ========================================================================== */
+
+/* stylelint-disable selector-no-universal  */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* stylelint-enable selector-no-universal */
+
+html {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  color: $main-text-color;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  font-family: $main-font;
+  overflow-x: hidden;
+  opacity: 1;
+  background: $main-bg;
+  margin: 0;
+  min-height: 100%;
+  //sticky footer start
+  display: flex;
+  flex-direction: column;
+}
+.main{
+  /*Основной раздел будет занимать все свободное место на странице*/
+  flex: 1 0 auto;
+}
+
+footer{
+  /*Футер будет занимать столько места по вертикали, сколько и должен и не пикселя больше */
+  flex: 0 0 auto;
+}
+//sticky footer end
+a {
+  text-decoration: none;
+  color: $c-white;
+
+  &:hover {
+    text-decoration: none;
+    color: $c-white;
+  }
+
+  &:focus {
+    text-decoration: none;
+    color: $c-white;
+  }
+}
+
+audio,
+canvas,
+iframe,
+svg,
+video,
+object,
+input,
+textarea {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
